@@ -14,14 +14,15 @@
     <link rel="stylesheet" href="/bootstrap/datatables/css/dataTables.bootstrap4.min.css"/>
 </head>
 <body>
-<form action="/dictionary" method="post">
+<form action="/dictionary" method="get">
 <div class="mb-3">
     <label class="form-label">enter word</label>
-    <input type="text" class="form-control" name="word">
+    <br>
+    <input type="text" class="form-control" name="mean" value="${input}">
     <button type="submit" class="btn btn-primary">search</button>
 </div>
-
 </form>
+<p>${mean}</p>
 </body>
 <script src="/bootstrap/jquery/jquery-3.5.1.min.js"></script>
 <script src="/bootstrap/datatables/js/jquery.dataTables.min.js"></script>
