@@ -8,13 +8,14 @@ import java.util.Map;
 public class DictionaryRepositoryImpl implements  IDictionaryRepository{
     static Map<String,String> dic= new LinkedHashMap<>();
     static {
-        dic.put("xin chào", "hello");
-        dic.put("tạm biệt", "goodbye");
-        dic.put("cảm ơn", "thanks");
+        dic.put("hello","xin chào");
+        dic.put( "goodbye","tạm biệt");
+        dic.put( "thanks","cảm ơn");
     }
 
+
     @Override
-    public Map<String, String> dictionary() {
-        return dic;
+    public String dictionary(String word) {
+        return dic.get(word);
     }
 }

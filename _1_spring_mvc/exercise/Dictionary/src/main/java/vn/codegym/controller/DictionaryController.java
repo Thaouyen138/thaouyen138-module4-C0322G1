@@ -17,10 +17,14 @@ public class DictionaryController {
         return "list";
     }
 
-    @GetMapping("/mean")
-    public  String mean(@RequestParam String mean, @RequestParam String input, Model model){
-        String result = iDictionaryService.dictionary(mean,input);
-        model.addAttribute("result",mean);
+    @GetMapping("/dictionary")
+    public  String mean(@RequestParam("word") String word, Model model){
+        String result = iDictionaryService.dictionary(word);
+        if(result == null) {
+            model.addAttribute("result", "This word not exits");
+        }else {
+            model.addAttribute("result",result);
+        }
         return "list";
     }
 

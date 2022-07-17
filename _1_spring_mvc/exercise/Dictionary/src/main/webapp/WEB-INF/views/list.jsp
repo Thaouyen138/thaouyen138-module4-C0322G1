@@ -18,11 +18,11 @@
 <div class="mb-3">
     <label class="form-label">enter word</label>
     <br>
-    <input type="text" class="form-control" name="mean" value="${input}">
+    <input type="text" class="form-control" name="word" value="${input}">
     <button type="submit" class="btn btn-primary">search</button>
 </div>
 </form>
-<p>${mean}</p>
+<p>${result}</p>
 </body>
 <script src="/bootstrap/jquery/jquery-3.5.1.min.js"></script>
 <script src="/bootstrap/datatables/js/jquery.dataTables.min.js"></script>
