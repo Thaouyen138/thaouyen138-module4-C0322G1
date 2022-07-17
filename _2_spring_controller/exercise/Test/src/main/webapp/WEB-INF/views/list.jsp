@@ -3,7 +3,7 @@
   User: thaouyen
   Date: 15/07/2022
   Time: 11:11
-  To change this template use File | Settings | File Templates.
+  To change this template use File | Settings | File Templates.bvc
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
