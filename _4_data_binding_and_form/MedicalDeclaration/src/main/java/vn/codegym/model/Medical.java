@@ -12,19 +12,6 @@ public class Medical {
     private String startDate;
     private String endDate;
 
-    public Medical(String name, String age, String gender, String national, String identity, String transport, String idTransport, String chair, String startDate, String endDate) {
-        this.name = name;
-        this.age = age;
-        this.gender = gender;
-        this.national = national;
-        this.identity = identity;
-        this.transport = transport;
-        this.idTransport = idTransport;
-        this.chair = chair;
-        this.startDate = startDate;
-        this.endDate = endDate;
-    }
-
     public String getName() {
         return name;
     }

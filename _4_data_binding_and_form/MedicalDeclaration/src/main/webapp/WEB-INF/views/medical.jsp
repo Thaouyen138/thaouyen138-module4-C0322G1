@@ -23,12 +23,27 @@
     <form:input path="name"/>
     <br>
     <label>Năm sinh <span style="color: red">(*)</span></label>
-    <form:input path="age"/>
+    <form:input path="age" type="date"/>
     <br>
     <label>Giới tính <span style="color: red">(*)</span></label>
-    <form:input path="gender"/><br>
+    <%--    <form:input path="gender"/><br>--%>
+    <form:select path="gender">
+        <form:option value="Nam">Nam</form:option>
+        <form:option value="Nam">Nữ</form:option>
+        <form:option value="Nam">Khác</form:option>
+    </form:select>
     <label>Quốc tịch <span style="color: red">(*)</span></label>
-    <form:input path="national"/><br>
+    <%--    <form:input path="national"/><br>--%>
+    <form:select path="national">
+        <form:option value="American">American</form:option>
+        <form:option value="Japan">Japan</form:option>
+        <form:option value="China">China</form:option>
+        <form:option value="Việt Nam">Việt Nam</form:option>
+        <form:option value="Paris">Paris</form:option>
+        <form:option value="England">England</form:option>
+        <form:option value="Korean">Korean</form:option>
+    </form:select>
+    <br>
     <label>Số hộ chiếu hoặc số cmnd hoặc giấy thông hành hợp phát khác<span style="color: red">(*)</span></label>
     <form:input path="identity"/><br>
     <label>Thông tin đi lại <span style="color: red">(*)</span></label>

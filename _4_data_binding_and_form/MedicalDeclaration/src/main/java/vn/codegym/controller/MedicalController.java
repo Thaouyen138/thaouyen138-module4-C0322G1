@@ -14,9 +14,10 @@ public class MedicalController {
         model.addAttribute("medical", new Medical());
         return "medical";
     }
+
     @PostMapping("/create")
-    public String medicalDeclaration(@ModelAttribute ("medical") Medical medical, Model model){
-        model.addAttribute("medical",medical);
+    public String medicalDeclaration(@ModelAttribute("medical") Medical medical, Model model) {
+        model.addAttribute("medical", medical);
         return "medical-declaration";
     }
 }
