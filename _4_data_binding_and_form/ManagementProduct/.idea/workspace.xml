@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6bc50cd8-3b83-447d-965a-3466a98d6a10" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/.gradle/6.3/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/.gradle/6.3/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/.gradle/6.3/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/.gradle/6.3/fileContent/fileContent.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/.gradle/6.3/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/.gradle/6.3/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/.gradle/6.3/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/.gradle/6.3/javaCompile/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/.gradle/6.3/javaCompile/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/.gradle/6.3/javaCompile/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/.gradle/6.5.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/.gradle/6.5.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/.gradle/6.5.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/.gradle/6.5.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/.gradle/6.5.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/.gradle/6.5.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/build/classes/java/main/vn/codegym/controller/FilterUTF8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/build/classes/java/main/vn/codegym/controller/MedicalController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/build/classes/java/main/vn/codegym/model/Medical.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/build/libs/MedicalDeclaration-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/src/main/java/vn/codegym/controller/FilterUTF8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/src/main/java/vn/codegym/controller/MedicalController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/src/main/java/vn/codegym/model/Medical.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/src/main/webapp/WEB-INF/views/medical-declaration.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/src/main/webapp/WEB-INF/views/medical.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MedicalDeclaration/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/.gradle/6.3/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/.gradle/6.3/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/.gradle/6.3/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/.gradle/6.3/fileContent/fileContent.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/.gradle/6.3/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/.gradle/6.3/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/.gradle/6.3/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/.gradle/6.3/javaCompile/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/.gradle/6.3/javaCompile/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/.gradle/6.3/javaCompile/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/.gradle/6.5.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/.gradle/6.5.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/.gradle/6.5.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/.gradle/6.5.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/.gradle/6.5.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/.gradle/6.5.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/build/classes/java/main/vn/codegym/controller/FilterUTF8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/build/classes/java/main/vn/codegym/controller/MailBoxController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/build/classes/java/main/vn/codegym/model/MailBox.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/build/libs/SaveMailBox-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/src/main/java/vn/codegym/controller/FilterUTF8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/src/main/java/vn/codegym/controller/MailBoxController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/src/main/java/vn/codegym/model/MailBox.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/src/main/webapp/WEB-INF/views/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/src/main/webapp/WEB-INF/views/mail-box.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaveMailBox/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2C6GBBU36gQ6NIWY7ea5KaRZBw2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6bc50cd8-3b83-447d-965a-3466a98d6a10" name="Default Changelist" comment="" />
+      <created>1658115492922</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1658115492922</updated>
+      <workItem from="1658115494993" duration="204000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="126" y="72" key="new project wizard" timestamp="1658115695834">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state x="126" y="72" key="new project wizard/0.25.1440.875@0.25.1440.875" timestamp="1658115695834" />
+  </component>
+</project>
