@@ -20,6 +20,7 @@ public class SingController {
         model.addAttribute("singList", iSingService.findAll());
         return "list";
     }
+
     @GetMapping("/create")
     public String showCreateForm(Model model) {
         model.addAttribute("sing", new Sing());

@@ -28,8 +28,8 @@ public class ProductServiceImpl implements IProductService {
     }
 
     @Override
-    public void update( Product product) {
-        iProductRepository.update( product);
+    public void update(Product product) {
+        iProductRepository.update(product);
     }
 
     @Override

@@ -1,7 +1,5 @@
 package vn.codegym.model;
 
-import org.hibernate.annotations.ColumnDefault;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;

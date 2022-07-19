@@ -5,6 +5,7 @@ import vn.codegym.model.Sing;
 
 import javax.persistence.EntityTransaction;
 import java.util.List;
+
 @Repository
 public class SingRepositoryImpl implements ISingRepository {
     @Override
