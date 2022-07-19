@@ -32,21 +32,23 @@ public class ProductController {
     }
 
     @GetMapping("/edit/{id}")
-    public  String showEdit(@PathVariable("id") Integer id, Model model){
+    public String showEdit(@PathVariable("id") String id, Model model) {
         Product product = iProductService.findById(id);
-        model.addAttribute("product",product);
+        model.addAttribute("product", product);
         return "edit";
     }
+
     @PostMapping("/edit")
     public String edit(@ModelAttribute("product") Product product, Model model) {
-        iProductService.update(Integer.parseInt(product.getId()),product);
+        iProductService.update(product);
         model.addAttribute("productList", iProductService.findAll());
         return "list";
     }
-     @GetMapping("/delete/{id}")
-     public String delete(@PathVariable("id") Integer id, Model model) {
-         iProductService.delete(id);
-         model.addAttribute("productList", iProductService.findAll());
-         return "list";
-     }
+
+    @GetMapping("/delete/{id}")
+    public String delete(@PathVariable("id") String id, Model model) {
+        iProductService.delete(id);
+        model.addAttribute("productList", iProductService.findAll());
+        return "list";
+    }
 }

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>edit sing</h1>
+<form action="/edit" method="post" th:object="${sing}">
+    <input th:field="*{id}" hidden>
+    <label>Name Sing</label>
+    <input th:field="*{name}">
+    <label>Singer</label>
+    <input th:field="*{singer}">
+    <label>Type Sing</label>
+    <input th:field="*{typeSing}">
+    <label>Link Sing</label>
+    <input th:field="*{linkSing}">
+    <button type="submit">edit</button>
+</form>
+</body>
+</html>

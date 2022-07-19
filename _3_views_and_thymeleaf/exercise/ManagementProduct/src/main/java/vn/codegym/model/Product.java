@@ -1,8 +1,16 @@
 package vn.codegym.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity(name = "product")
 public class Product {
+    @Id
     private String id;
-    private  String name;
+
+    @Column(name = "name", columnDefinition = "VARCHAR(45)")
+    private String name;
     private String price;
     private String describle;
     private String producer;

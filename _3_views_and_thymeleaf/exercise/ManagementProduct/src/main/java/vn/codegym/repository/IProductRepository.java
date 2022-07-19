@@ -9,9 +9,9 @@ public interface IProductRepository {
 
     void create(Product product);
 
-    Product findById(int id);
+    Product findById(String id);
 
-    void update(int id, Product product);
+    void update( Product product);
 
-    void delete(int id);
+    void delete(String id);
 }
