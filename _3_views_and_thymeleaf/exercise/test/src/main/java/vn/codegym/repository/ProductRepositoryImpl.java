@@ -3,6 +3,7 @@ package vn.codegym.repository;
 import org.springframework.stereotype.Repository;
 import vn.codegym.model.Product;
 
+import javax.persistence.EntityTransaction;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -10,27 +11,44 @@ import java.util.Map;
 
 @Repository
 public class ProductRepositoryImpl implements IProductRepository {
-    static Map<Integer, Product> productMap = new LinkedHashMap<>();
-
-    static {
-        productMap.put(1, new Product("1", "nokia X8", "20000", "new", "nokia"));
-        productMap.put(2, new Product("2", "samsung galaxy note 8", "20000", "old", "samsung"));
-        productMap.put(3, new Product("3", "iphone 11", "30000", "99%", "apple"));
-        productMap.put(4, new Product("4", "iphone 13 pro max", "40000", "new", "apple"));
-    }
 
     @Override
     public List<Product> findAll() {
-        return new ArrayList<>(productMap.values());
+        String select = "select p from product p where status_delete =  0";
+        List<Product> productList = BaseRepository.entityManager.createQuery(select, Product.class).getResultList();
+        return productList;
     }
 
     @Override
-    public void delete(int id) {
-        productMap.remove(id);
+    public void create(Product product) {
+        EntityTransaction entityTransaction = BaseRepository.entityManager.getTransaction();
+        entityTransaction.begin();
+        BaseRepository.entityManager.persist(product);
+        entityTransaction.commit();
     }
 
     @Override
-    public List<Product> findByField(String name) {
-        return new ArrayList<>(productMap.values());
+    public Product findById(String id) {
+        String select = "select p from product p where p.id = ?1 ";
+        Product product = BaseRepository.entityManager.createQuery(select, Product.class).setParameter(1, id).getSingleResult();
+        return product;
+    }
+
+    @Override
+    public void update(Product product) {
+        EntityTransaction entityTransaction = BaseRepository.entityManager.getTransaction();
+        entityTransaction.begin();
+        BaseRepository.entityManager.merge(product);
+        entityTransaction.commit();
+    }
+
+    @Override
+    public void delete(String id) {
+        Product product = findById(id);
+        product.setStatusDelete(1);
+        EntityTransaction entityTransaction = BaseRepository.entityManager.getTransaction();
+        entityTransaction.begin();
+        BaseRepository.entityManager.merge(product);
+        entityTransaction.commit();
     }
 }
