@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>add new product</h1>
+<form action="/create" method="post" th:object="${blog}">
+    <label>Category</label>
+    <input th:field="*{category}">
+    <label>content</label>
+    <input th:field="*{content}">
+    <label>Name</label>
+    <input th:field="*{name}">
+    <label>Timeup</label>
+    <input th:field="*{timeUp}" type="date">
+    <button type="submit">add new</button>
+</form>
+</body>
+</html>
