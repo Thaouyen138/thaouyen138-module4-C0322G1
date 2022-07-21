@@ -8,8 +8,12 @@
 <h1>edit blog</h1>
 <form action="/edit" method="post" th:object="${blog}">
     <input th:field="*{id}" hidden>
-    <label>Category</label>
-    <input th:field="*{category}">
+    <select th:field="*{category}">
+        <option th:each="item : ${category}" th:value="${item.id}"
+                th:text="${item.name}"></option>
+    </select>
+    <label>content</label>
+    <input th:field="*{content}">
     <label>Name</label>
     <input th:field="*{name}">
     <label>Time up</label>

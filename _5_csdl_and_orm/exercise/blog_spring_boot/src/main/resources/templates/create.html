@@ -9,7 +9,10 @@
 <h1>add new product</h1>
 <form action="/create" method="post" th:object="${blog}">
     <label>Category</label>
-    <input th:field="*{category}">
+<select th:field="*{category}">
+    <option th:each="item : ${category}" th:value="${item.id}"
+    th:text="${item.name}"></option>
+</select>
     <label>content</label>
     <input th:field="*{content}">
     <label>Name</label>

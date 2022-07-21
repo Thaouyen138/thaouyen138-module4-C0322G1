@@ -1,20 +1,23 @@
-package vn.codegym.service;
+package vn.codegym.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import vn.codegym.model.Blog;
 import vn.codegym.repository.IBlogRepository;
+import vn.codegym.service.IBlogService;
 
 import java.util.List;
 
 @Service
-public class BlogServiceImpl implements IBlogService {
+public class BlogService implements IBlogService {
     @Autowired
     IBlogRepository iBlogRepository;
 
     @Override
-    public List<Blog> findAll() {
-        return iBlogRepository.findAllBlog();
+    public Page<Blog> findAll(Pageable pageable) {
+        return iBlogRepository.findAllBlog(pageable);
     }
 
     @Override

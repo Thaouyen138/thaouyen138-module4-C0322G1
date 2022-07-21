@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="row bg-primary" style="height: 70px;">
-    <div class="col-md-12 center-box ">
+    <div class="col-md-12 container center-box ">
         <a href="/" class="text-white font-weight-bold" style="font-size: 40px ;text-decoration: none">
             blog list
         </a>
@@ -20,6 +20,7 @@
         <tr>
             <th class="border-0">Id</th>
             <th class="border-0">category</th>
+            <th class="border-0">content</th>
             <th class="border-0">name</th>
             <th class="border-0"> timeup</th>
             <th class="border-0 text-primary">𝔼𝕕𝕚𝕥</th>
@@ -30,7 +31,8 @@
         <tbody>
         <tr th:each="blog : ${blogList}">
             <td th:text="${blog.id}"></td>
-            <td th:text="${blog.category}"></td>
+            <td th:text="${blog.category.name}"></td>
+            <td th:text="${blog.content}"></td>
             <td th:text="${blog.name}"></td>
             <td th:text="${blog.timeUp}"></td>
             <td><a th:href="@{/edit/__${blog.id}__}">edit</a></td>
@@ -39,9 +41,22 @@
         </tbody>
     </table>
 </div>
+<div class="center-box m-4">
+        <span>
+            <a class=" btn btn-primary page m-2" th:if="${blogList.hasPrevious()}"
+               th:href="@{/(page = ${blogList.number - 1})}">Previous</a>
+        </span>
+    <span th:each="pageNo: ${#numbers.sequence(0,blogList.totalPages - 1)}">
+            <a class=" btn btn-primary page m-2" th:href="@{/(page = ${pageNo})}" th:text="${pageNo + 1}"></a>
+        </span>
+    <span>
+            <a class=" btn btn-primary page m-2" th:if="${blogList.hasNext()}"
+               th:href="@{/(page = ${blogList.number +1})}">Next</a>
+        </span>
+</div>
 <div>
     <div class="center-box w-100">
-        <a href="/create" class="btn btn-primary font-weight-bold">
+        <a href="/create" class="btn btn-primary w-25 font-weight-bold">
             𝔸𝕕𝕕 𝕟𝕖𝕨 &ensp;
             <i class="bi bi-calendar2-plus font-weight-bold" style="font-size: 30px"></i>
             <i class="ml-2 bi bi-plus-circle font-weight-bold"></i>

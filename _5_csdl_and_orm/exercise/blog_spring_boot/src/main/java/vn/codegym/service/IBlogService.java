@@ -1,11 +1,13 @@
 package vn.codegym.service;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import vn.codegym.model.Blog;
 
 import java.util.List;
 
 public interface IBlogService {
-    List<Blog> findAll();
+    Page<Blog> findAll(Pageable pageable);
 
     void create(Blog blog);
 
