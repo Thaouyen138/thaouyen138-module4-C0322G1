@@ -7,18 +7,30 @@
 </head>
 <body>
 <h1>add new product</h1>
-<form action="/create" method="post" th:object="${product}">
-    <label>id</label>
-    <input th:field="*{id}">
-    <label>name</label>
-    <input th:field="*{name}">
-    <label>price</label>
-    <input th:field="*{price}">
-    <label>describle</label>
-    <input th:field="*{describle}">
-    <label>producer</label>
-    <input th:field="*{producer}">
+<form action="/create" method="post" th:object="${productDto}">
+    <div class="mb-3">
+    <label class="form-label">id</label>
+    <input type="text" th:field="*{id}" class="form-control">
+    <p style="color: #007bff" th:if = "${#fields.hasErrors('id')}" th:errors = "*{id}"></p>
+
+    <label  class="form-label">name</label>
+    <input type="text" th:field="*{name}" class="form-control">
+    <p style="color: #007bff" th:if = "${#fields.hasErrors('name')}" th:errors = "*{name}"></p>
+
+    <label  class="form-label">price</label>
+    <input type="text" th:field="*{price}" class="form-control">
+    <p style="color: #007bff" th:if = "${#fields.hasErrors('price')}" th:errors = "*{price}"></p>
+
+    <label  class="form-label">describle</label>
+    <input type="text"  th:field="*{describle}" class="form-control">
+    <p style="color: #007bff" th:if = "${#fields.hasErrors('describle')}" th:errors = "*{describle}"></p>
+
+    <label  class="form-label">producer</label>
+    <input type="text" th:field="*{producer}" class="form-control">
+    <p style="color: #007bff" th:if = "${#fields.hasErrors('producer')}" th:errors = "*{producer}"></p>
+
     <button type="submit">add new</button>
+    </div>
 </form>
 </body>
 </html>

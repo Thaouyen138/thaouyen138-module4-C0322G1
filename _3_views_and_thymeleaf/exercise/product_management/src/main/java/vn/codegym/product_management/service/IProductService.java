@@ -5,7 +5,7 @@ import org.springframework.data.domain.Pageable;
 import vn.codegym.product_management.model.Product;
 
 public interface IProductService {
-    Page<Product> findAll(Pageable pageable);
+    Page<Product> findAll(String id, String name,Pageable pageable);
 
     void create(Product product);
 

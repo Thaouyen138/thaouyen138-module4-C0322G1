@@ -9,7 +9,8 @@
 <body>
 <h1>Product List</h1>
 <a href="/create">Add new</a>
-<table>
+<div>
+<table class="table table-hover table-center container" id="table">
     <tr>
         <th>Id</th>
         <th>Name</th>
@@ -29,7 +30,7 @@
         <td><a th:href="@{/delete/__${product.id}__}">delete</a></td>
     </tr>
 </table>
-
+</div>
 <div class="center-box m-4">
         <span>
             <a class=" btn btn-primary page m-2" th:if="${productList.hasPrevious()}"

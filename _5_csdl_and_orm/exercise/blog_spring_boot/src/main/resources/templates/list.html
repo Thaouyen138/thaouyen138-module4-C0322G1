@@ -5,13 +5,20 @@
     <title>Title</title>
     <link rel="stylesheet" th:href="@{/bootstrap/bootstrap413/css/bootstrap.min.css}"/>
     <link rel="stylesheet" th:href="@{/bootstrap/bootstrap413/css/furama.css}"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 </head>
 <body>
 <div class="row bg-primary" style="height: 70px;">
-    <div class="col-md-12 container center-box ">
+    <div class="col-md-1"></div>
+    <div class="col-md-10 container center-box ">
         <a href="/" class="text-white font-weight-bold" style="font-size: 40px ;text-decoration: none">
             blog list
         </a>
+    </div>
+    <div class="col-md-1 center-box">
+        <span class="bi bi-search btn bg-white font-weight-bold"
+              data-toggle="modal" data-target="#search" style="width:300px;float: right">
+        </span>
     </div>
 </div>
 <div>
@@ -44,14 +51,18 @@
 <div class="center-box m-4">
         <span>
             <a class=" btn btn-primary page m-2" th:if="${blogList.hasPrevious()}"
-               th:href="@{/(page = ${blogList.number - 1})}">Previous</a>
+               th:href="@{/(page = ${blogList.number - 1}, content = ${content}, catogoryId = ${categoryId})}">Previous</a>
         </span>
     <span th:each="pageNo: ${#numbers.sequence(0,blogList.totalPages - 1)}">
-            <a class=" btn btn-primary page m-2" th:href="@{/(page = ${pageNo})}" th:text="${pageNo + 1}"></a>
+            <a class=" btn btn-primary page m-2"
+               th:href="@{/(page = ${pageNo}, content = ${content}, catogoryId = ${categoryId})}"
+               th:text="${pageNo + 1}"></a>
         </span>
     <span>
             <a class=" btn btn-primary page m-2" th:if="${blogList.hasNext()}"
-               th:href="@{/(page = ${blogList.number +1})}">Next</a>
+               th:href="@{/(page = ${blogList.number +1}, content = ${content}, catogoryId = ${categoryId})}">
+                Next
+            </a>
         </span>
 </div>
 <div>
@@ -63,13 +74,42 @@
         </a>
     </div>
 </div>
+<div class="modal" id="search">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header w-100">
+                <div class="w-100 center-box">
+                    <form method="get" action="/"
+                          class="form-inline my-2 my-lg-0 w-100 center-box">
+                        <div class="p-1 bg-light rounded rounded-pill w-100 shadow-sm center-box">
+                            <div class="input-group center-box w-100 space-around">
+                                <select name="categoryId" class="form-control border-0 bg-light w-25 p-0">
+                                    <option value="">--category--</option>
+                                    <option th:each="item : ${category}" th:value="${item.id}"
+                                            th:text="${item.name}"></option>
+                                </select>
+                                <input type="search" placeholder="Input content" aria-describedby="button-addon1"
+                                       class="form-control border-0 bg-light w-25 p-0"
+                                       name="content">
+                                <div class="input-group-append w-25">
+                                    <button id="button-addon1" type="submit" class="btn btn-link text-primary h-100 w-100 p-0">
+                                        <i class="bi bi-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
-<script src="/resources/jquery/jquery-3.5.1.min.js"></script>
-<script src="/resources/datatables/js/jquery.dataTables.min.js"></script>
-<script src="/resources/datatables/js/dataTables.bootstrap4.min.js"></script>
+<script th:src="@{/bootstrap/jquery/jquery-3.5.1.min.js}"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-<script src="/resources/bootstrap413/js/bootstrap.bundle.min.js"></script>
+<script th:src="@{/bootstrap/bootstrap413/js/bootstrap.bundle.min.js}"></script>
 </html>

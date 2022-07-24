@@ -8,14 +8,19 @@ import org.springframework.web.bind.annotation.*;
 import vn.codegym.product_management.model.Product;
 import vn.codegym.product_management.service.IProductService;
 
+import java.util.List;
+
 @Controller
 public class ProductController {
     @Autowired
     IProductService iProductService;
 
     @GetMapping("/")
-    public String showList(@RequestParam(name = "page", defaultValue = "0") int page, Model model) {
-        model.addAttribute("productList", iProductService.findAll(PageRequest.of(page, 1)));
+    public String showList(@RequestParam(name = "page", defaultValue = "0") int page,
+                           @RequestParam(name="id",defaultValue = "") String id,
+                           @RequestParam(name="name",defaultValue = "") String name,
+                           Model model) {
+        model.addAttribute("productList", iProductService.findAll(id,name,PageRequest.of(page, 5)));
         return "list";
     }
 

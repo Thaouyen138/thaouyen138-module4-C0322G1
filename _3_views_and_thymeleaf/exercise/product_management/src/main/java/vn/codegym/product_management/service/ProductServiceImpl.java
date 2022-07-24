@@ -13,8 +13,8 @@ public class ProductServiceImpl implements IProductService {
     IProductRepository iProductRepository;
 
     @Override
-    public Page<Product> findAll(Pageable pageable) {
-        return iProductRepository.findAll(pageable);
+    public Page<Product> findAll(String id, String name,Pageable pageable) {
+        return iProductRepository.findAllBlog("%"+id+"%", "%"+name+"%",pageable);
     }
 
     @Override

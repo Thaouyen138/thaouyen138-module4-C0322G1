@@ -4,10 +4,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import vn.codegym.model.Blog;
 
-import java.util.List;
-
 public interface IBlogService {
-    Page<Blog> findAll(Pageable pageable);
+    Page<Blog> findAll(String content, String categoryId, Pageable pageable);
 
     void create(Blog blog);
 
