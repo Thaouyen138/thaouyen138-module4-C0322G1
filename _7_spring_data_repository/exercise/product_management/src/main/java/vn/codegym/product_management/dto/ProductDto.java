@@ -1,8 +1,5 @@
 package vn.codegym.product_management.dto;
 
-import net.bytebuddy.implementation.bind.annotation.Empty;
-
-import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
 
 public class ProductDto {
