@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="/bootstrap/bootstrap413/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <style>
+        .menu-button:hover {
+        /;
+            background-color: white;
+        }
+
+        .center-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .menu {
+            padding: 0
+        }
+
+        .col-1 {
+            width: 8.33%;
+        }
+
+        .col-2 {
+            width: 16.66%;
+        }
+
+        .col-3 {
+            width: 25%;
+        }
+
+        .col-4 {
+            width: 33.33%;
+        }
+
+        .col-5 {
+            width: 41.66%;
+        }
+
+        .col-6 {
+            width: 50%;
+        }
+
+        .col-7 {
+            width: 58.33%;
+        }
+
+        .col-8 {
+            width: 66.66%;
+        }
+
+        .col-9 {
+            width: 75%;
+        }
+
+        .col-10 {
+            width: 83.33%;
+        }
+
+        .col-11 {
+            width: 91.66%;
+        }
+
+        .col-12 {
+            width: 100%;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+
+        .row::after {
+            clear: both;
+            content: "";
+            display: block;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #eeeeee;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light " style="background-color: #b8daff">
+    <div class="collapse navbar-collapse center-box row" id="navbarSupportedContent">
+        <div class="col-md-5">
+            <ul class="navbar-nav mr-auto">
+                <li>
+                    <img style="width: 80px;height: 50px"
+                         src="https://www.datedluxuryweddings.com/wp-content/uploads/2021/06/Furama.png">
+                </li>
+                <li class="nav-item active menu-button center-box pr-4 pl-4">
+                    <a class="nav-link center-box " href="/" style="font-size: 30px">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active menu-button center-box pr-4 pl-4">
+                    <a class="nav-link active center-box" href="/customer" style="font-size: 30px">Customer</a>
+                </li>
+                <li class="nav-item active menu-button center-box pr-4 pl-4">
+                    <a class="nav-link center-box" href="/facility" style="font-size: 30px">Facility</a>
+                </li>
+                <li class="nav-item active menu-button center-box pr-4 pl-4">
+                    <a class="nav-link  center-box" href="/" style="font-size: 30px">Service</a>
+                </li>
+                <li class="nav-item active menu-button center-box pr-4 pl-4">
+                    <a class="nav-link center-box " href="/" style="font-size: 30px">Employee</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-4"> &nbsp;</div>
+        <div class="col-md-3" style=" float: right;width: 300px;height: 50px">
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline my-2 my-sm-0" type="submit">
+                    <i class="bi bi-search"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>
+<div class="row">
+    <div class="col-4">
+        <div class="row">
+            <div class="col-12 ">
+                <img style="width: 100%"
+                     src="https://pix10.agoda.net/hotelImages/109/10953/10953_16030216470040397599.jpg?ca=6&ce=1&s=1024x768">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 ">
+                <img style="width: 100%"
+                     src="https://furamavietnam.com/wp-content/uploads/2022/03/frm-03-1-762x563.jpg">
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-12 ">
+                <img style="width: 100%"
+                     src="https://furamavietnam.com/wp-content/uploads/2018/03/%5E19BFC67D7D58B6D3C155DB9CA96927213F31F8C8E7F909F3E2%5Epimgpsh_fullsize_distr-1047x563.jpg">
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-12 ">
+                <img style="width: 100%"
+                     src="https://q-xx.bstatic.com/xdata/images/hotel/840x460/207702593.jpg?k=fa65678d9e9530d6f2cd3cd87313a3eaf4ae861d05f8290971a6c3cbc33308fb&o=">
+            </div>
+
+        </div>
+    </div>
+    <div class="col-8">
+        <iframe style="width: 100% ;height: 800px ;margin-top: 12px" src="https://www.youtube.com/embed/PgvSSl4jm1U"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        <br> <br>
+        <h4>Furama Resort Đà Nẵng | Giải Trí | Du Lịch</h4>
+        <br>
+        <span> <i class="bi bi-eye-fill"></i> 383</span>
+        &emsp; <i class="bi bi-hand-thumbs-up"></i> &ensp; 512
+        &emsp; <i class="bi bi-hand-thumbs-down"></i> &ensp;5
+        &emsp; <i class="bi bi-share"></i> &emsp; Chia sẻ
+        &emsp; <i class="bi bi-scissors"></i> &emsp; Tạo đoạn video
+        &emsp; <i class="bi bi-download"></i> &emsp; Lưu
+        <hr>
+        <h3><span> <i class="bi bi-app"></i> Du lịch</span></h3>
+        <span>
+        <button style="margin-right: 300px; background-color: crimson; color: whitesmoke; height: 45px;width: 130px ;font-size: 30px"> Đăng ký</button>
+</span>
+        <br>Furama Resort Đà Nẵng</br>
+        ● Furama Resort Đà Nẵng tọa lạc trên bãi biển Bắc Mỹ An một trong những bờ biển đẹp của Việt Nam, nổi tiếng sạch
+        đẹp với bờ cát trắng mịn, biển xanh trong .Khu nghỉ dưỡng Furama đã vinh dự đón tiếp những vị khách nổi tiếng
+        của hoàng gia cũng như những chính trị gia. Khu nghỉ dưỡng là cửa ngõ đi đến Di sản thế giới được UNESCO công
+        nhận: phố cổ Hội An, thánh địa Mỹ Sơn và cố đô Huế. Kiến trúc của Furama được pha trộn thiết kế truyền thống của
+        Việt Nam và kiến trúc thời Pháp , được bố trí hài hòa, mỗi dãy phòng là một thiên đường của sự sang trọng và
+        khéo léo. </br>
+        ● Furama Resort Đà Nẵng ẩn mình dưới hàng dừa đung đưa trong gió dưới những buổi chiều tà, ngâm mình trong hồ
+        bơi được Resort thiết kế trước biển, bạn có thể ngắm cảnh thiên nhiên, lắng nghe tiếng sóng biển vỗ đều đều mang
+        lại cho bạn cảm giác thoải mái khi nghỉ dưỡng tại đây. Những túp lều nhỏ xinh gần bờ biển giúp bạn được ngắm
+        biển gần hơn, tận hưởng vẻ đẹp của thiên nhiên.<br>
+        Thảo Uyên – ĐẶT PHÒNG TOÀN QUỐC <br>
+        www.uyendepgai.com.vn <br>
+        Dịch vụ của chúng tôi bao gồm:<br>
+        + Đặt phòng khách sạn- resorts trên toàn quốc.<br>
+        + Tổ chức các tour ghép đoàn quốc tế đến các điểm du lịch nổi tiếng như Bali - Phuket...<br>
+        + Tổ chức tour hội thảo – team building.<br>
+        + Tổ chức Tour du lịch Nội Địa CLC cho khách lẻ và khách nhóm.<br>
+        + Tư vấn du lịch miễn phí cho mọi đối tưọng khách hàng.<br>
+        Dịch vụ chuyên nghiệp, tin cậy, linh hoạt , giá cả cạnh tranh, chế độ chăm sóc khách hàng chu đáo…<br>
+        Để biết thêm thông tin & đặt phòng vui lòng liên hệ:<br>
+        Ms. Thảo uyên – 0905.333.333 – uyendepgai@vdtours.vn<br>
+        Ms. Hảo ngu – 0908.68.68.68 – haongulam@tours.vn<br>
+        Ms. Hảo ko ngu – 0979802215 - haokongu@vdtours.vn<br>
+        Công ty TNHH Phát triển Du lịch Việt nam<br>
+        ✔ Add: Số 295, Nguyễn Tất Thành, Hải Châu, Đà nẵng<br>
+        ✔ Office : Số 295, Nguyễn Tất Thành, Hải Châu, Đà nẵng<br>
+        ✔ Tel: +84 -935.333.33<br>
+        ✔ Email: vdtours@vnn.vn<br>
+        ✔ Web: www.webuyenkute.com<br>
+        </p>
+    </div>
+</div>
+<div class="card text-center" style="background-color: #b8daff">
+    <div class="card-header" style="font-size: 30px">
+        ғᴜʀᴀᴍᴀ
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text"><i class="bi bi-telephone-outbound" style="font-size: 30px"></i>: 0333.333.333
+            <br>
+            <i class="bi bi-envelope-open-heart"></i>: furama@gmail.com.vn
+            </br>
+            <i class="bi bi-house-heart"></i>: Đà Nẵng
+        </p>
+    </div>
+</div>
+
+</body>
+<script src="/bootstrap/bootstrap413/js/bootstrap.bundle.js"></script>
+</html>
