@@ -15,7 +15,8 @@ import vn.codegym.validation_form.model.Person;
 import vn.codegym.validation_form.service.IPersonService;
 
 @Controller
-public class PersonController {
+public class
+PersonController {
 
     @Autowired
     private IPersonService iPersonService;
