@@ -11,15 +11,31 @@
     <title>Title</title>
 </head>
 <body>
-<h3>HỌ VÀ TÊN: ${medical.name}</h3>
-<h3>NĂM SINH: ${medical.age}</h3>
-<h3>GIỚI TÍNH: ${medical.gender}</h3>
-<h3>QUỐC TỊCH: ${medical.national}</h3>
-<h3>CMND: ${medical.identity}</h3>
-<h3>PHƯƠNG TIỆN: ${medical.transport}</h3>
-<h3>SỐ PHƯƠNG TIỆN: ${medical.idTransport}</h3>
-<h3>SỐ GHẾ: ${medical.chair}</h3>
-<h3>NGÀY BẮT ĐẦU: ${medical.startDate}</h3>
-<h3>NGÀY KẾT THÚC: ${medical.endDate}</h3>
+<table>
+    <tr>
+        <th>name</th>
+        <th>age</th>
+        <th>gender</th>
+        <th>national</th>
+        <th>identity</th>
+        <th>transport</th>
+        <th>id transport</th>
+        <th>chair</th>
+        <th>start date</th>
+        <th>end date</th>
+    </tr>
+    <tr>
+        <td> ${medical.name}</td>
+        <td>${medical.age}</td>
+        <td>${medical.gender}</td>
+        <td>${medical.national}</td>
+        <td>${medical.identity}</td>
+        <td>${medical.transport}</td>
+        <td> ${medical.idTransport}</td>
+        <td>${medical.chair}</td>
+        <td> ${medical.startDate}</td>
+        <td>${medical.endDate}</td>
+    </tr>
+</table>
 </body>
 </html>

@@ -8,11 +8,12 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import vn.codegym.model.Medical;
 import vn.codegym.repository.IMedicalRepository;
+import vn.codegym.service.IMedicalService;
 
 @Controller
 public class MedicalController {
     @Autowired
-    IMedicalRepository iMedicalRepository;
+    IMedicalService iMedicalService;
 
     @GetMapping("/")
     public String medical(Model model) {
@@ -22,7 +23,8 @@ public class MedicalController {
 
     @PostMapping("/create")
     public String medicalDeclaration(@ModelAttribute("medical") Medical medical, Model model) {
-        model.addAttribute("medical", medical);
+        iMedicalService.create(medical);
+        model.addAttribute("medicalList", iMedicalService.findAll());
         return "medical-declaration";
     }
 }

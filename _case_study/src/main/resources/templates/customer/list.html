@@ -66,11 +66,11 @@
             <td th:text="${c.email}"></td>
             <td th:text="${c.address}"></td>
             <td>
-                <a href="/customer?action=edit&id=${c.id}" class="btn btn-primary"><i
+                <a style="border-radius: 30px" href="/customer?action=edit&id=${c.id}" class="btn btn-primary"><i
                         class="bi bi-pencil-square"></i></a>
             </td>
             <td>
-                <btn class="btn btn-primary" data-toggle="modal" data-target="#delete" onclick="getId(`${c.id}`)">
+                <btn style="border-radius: 30px" class="btn btn-primary" data-toggle="modal" data-target="#delete" onclick="getId(`${c.id}`)">
                     <i class="bi bi-trash"></i>
                 </btn>
             </td>
@@ -80,16 +80,16 @@
             <td colspan="11">
                 <div class="center-box m-4">
         <span>
-            <a class=" btn btn-primary page m-2" th:if="${customerList.hasPrevious()}"
+            <a style="border-radius: 30px" class=" btn btn-primary page m-2" th:if="${customerList.hasPrevious()}"
                th:href="@{/customer(page = ${customerList.number - 1})}">Previous</a>
         </span>
                     <span th:each="pageNo: ${#numbers.sequence(0,customerList.totalPages - 1)}">
-            <a class=" btn btn-primary page m-2"
+            <a style="border-radius: 30px" class=" btn btn-primary page m-2"
                th:href="@{/customer(page = ${pageNo})}"
                th:text="${pageNo + 1}"></a>
         </span>
                     <span>
-            <a class=" btn btn-primary page m-2" th:if="${customerList.hasNext()}"
+            <a style="border-radius: 30px" class=" btn btn-primary page m-2" th:if="${customerList.hasNext()}"
                th:href="@{/customer(page = ${customerList.number +1})}">
                 Next
             </a>
@@ -97,6 +97,16 @@
                 </div>
             </td>
 
+        </tr>
+        <tr>
+            <td colspan="11">
+            <div class="center-box w-100">
+                <a style="border-radius: 30px" href="/customer/create" class="btn btn-primary font-weight-bold">
+                    𝔸𝕕𝕕 𝕟𝕖𝕨 𝕔𝕦𝕤𝕥𝕠𝕞𝕖𝕣 &ensp;
+                    <i class="bi bi-calendar2-plus font-weight-bold" style="font-size: 30px"></i>
+                </a>
+            </div>
+            </td>
         </tr>
     </table>
 </div>

@@ -9,4 +9,5 @@ public interface ICustomerService {
 
     Page<Customer> findALl(Pageable pageable);
 
+    void create(Customer customer);
 }

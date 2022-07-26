@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link href="/bootstrap/bootstrap413/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <style>
+        .center-box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+<div class="row bg-primary center-box text-white " style="height: 50px">
+    <h6 class="center-box" style="font-size: 40px"> 🅰🅳🅳 🅽🅴🆆 🅲🆄🆂🆃🅾🅼🅴🆁</h6>
+</div>
+<form action="/customer/create" method="post" th:object="${customer}" class="container">
+    <div class="mb-3">
+        <label class="form-label">id </label>
+        <input type="text" th:field="*{id}" class="form-control" >
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input th:field="*{name}" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Date of birth</label>
+        <input type="date" th:field="*{dateOfBirth}" class="form-control">
+    </div>
+<!--    <div class="mb-3">-->
+<!--        <label class="form-label">gender</label>-->
+<!--        <select th:field="*{gender}" class="form-control">-->
+<!--            <option>choose</option>-->
+<!--            <option th:value="0">Nữ</option>-->
+<!--            <option th:value="1">Nam</option>-->
+<!--        </select>-->
+<!--    </div>-->
+    <div class="mb-3">
+        <label class="form-label">Gender </label>
+        <input  th:field="*{gender}" class="form-control" >
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Indentity </label>
+        <input  th:field="*{idCard}" class="form-control" >
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Phone</label>
+        <input th:field="*{phoneNumber}" class="form-control" >
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input  th:field="*{email}" class="form-control" >
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Address</label>
+        <input  th:field="*{address}" class="form-control" >
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Customer type</label>
+        <select th:field="*{customerType}" class="form-control">
+            <option th:each="items : ${customerType}"  th:value="${items.id}"
+                    th:text="${items.name}">
+            </option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary float-right" style="border-radius: 30px">Submit</button>
+    <a href="/" class="btn btn-primary float-left" style="border-radius: 30px"> Back Home</a>
+</form>
+</body>
+</html>

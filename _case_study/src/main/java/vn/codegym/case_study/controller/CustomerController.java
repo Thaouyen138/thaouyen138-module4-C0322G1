@@ -4,9 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
+import vn.codegym.case_study.model.customer.Customer;
 import vn.codegym.case_study.model.customer.CustomerType;
 import vn.codegym.case_study.service.ICustomerService;
 import vn.codegym.case_study.service.ICustomerTypeService;
@@ -14,6 +13,7 @@ import vn.codegym.case_study.service.ICustomerTypeService;
 import java.util.List;
 
 @Controller
+@RequestMapping("/customer")
 public class CustomerController {
 
     @Autowired
@@ -26,7 +26,7 @@ public class CustomerController {
         return iCustomerTypeService.findALl();
     }
 
-    @GetMapping("/customer")
+    @GetMapping("")
     public String showListCustomer(@RequestParam(name = "page", defaultValue = "0") int page,
                                    Model model
     ) {
@@ -34,8 +34,16 @@ public class CustomerController {
         return  "customer/list";
     }
 
-    @GetMapping("/")
-    public String showList(){
-        return  "home";
+    @GetMapping("/create")
+    public String showCreateForm(Model model) {
+        model.addAttribute("customer", new Customer());
+        return "customer/create";
     }
+
+    @PostMapping("/create")
+    public String create(@ModelAttribute("customer") Customer customer) {
+        iCustomerService.create(customer);
+        return "redirect:/customer";
+    }
+
 }
