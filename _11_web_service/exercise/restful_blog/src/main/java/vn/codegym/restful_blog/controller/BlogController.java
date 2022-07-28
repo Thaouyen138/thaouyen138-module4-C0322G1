@@ -9,7 +9,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import vn.codegym.restful_blog.model.Blog;
 import vn.codegym.restful_blog.service.IBlogService;
+
 import java.util.List;
+
 @RestController
 @RequestMapping("/blog/api/v1")
 public class BlogController {
@@ -18,20 +20,20 @@ public class BlogController {
     private IBlogService iBlogService;
 
     @GetMapping
-    public ResponseEntity<List<Blog>> getBlogList(){
+    public ResponseEntity<List<Blog>> getBlogList() {
         List<Blog> blogList = iBlogService.findAll();
-        if (blogList.isEmpty()){
+        if (blogList.isEmpty()) {
             return new ResponseEntity<>(HttpStatus.OK);
         }
-        return  new ResponseEntity<>(blogList,HttpStatus.OK);
+        return new ResponseEntity<>(blogList, HttpStatus.OK);
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Blog> getBlogId(@PathVariable Integer id){
+    public ResponseEntity<Blog> getBlogId(@PathVariable Integer id) {
         Blog blog = (iBlogService.findbyId(id));
-        if (blog == null){
-            return  new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        if (blog == null) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
-        return new ResponseEntity<>(blog,HttpStatus.OK);
+        return new ResponseEntity<>(blog, HttpStatus.OK);
     }
 }

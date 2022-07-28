@@ -20,12 +20,12 @@ public class CategoryController {
     private ICategoryService iCategoryService;
 
     @GetMapping
-    public ResponseEntity<List<Category>> getBlogList(){
+    public ResponseEntity<List<Category>> getBlogList() {
         List<Category> categoryList = iCategoryService.findAll();
-        if (categoryList.isEmpty()){
+        if (categoryList.isEmpty()) {
             return new ResponseEntity<>(HttpStatus.OK);
         }
-        return  new ResponseEntity<>(categoryList,HttpStatus.OK);
+        return new ResponseEntity<>(categoryList, HttpStatus.OK);
     }
 
 }
