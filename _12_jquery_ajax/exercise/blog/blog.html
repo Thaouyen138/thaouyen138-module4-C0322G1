@@ -41,6 +41,29 @@
                 $("#table2").append(row.join(""));
             }
         })
+
+        $("#more").click(function () {
+            $("#table2").empty();
+
+            $.ajax({
+                url: "http://localhost:8080/blog/api/v1",
+                type: "get",
+                dataType: "json",
+                success: function (data) {
+                    let row = [];
+                    for (let i = 0; i < data.length; i++) {
+                        row.push("<tr>");
+                        row.push("<td>" + data[i].id + "</td>");
+                        row.push("<td>" + data[i].name + "</td>");
+                        row.push("<td>" + data[i].category.name + "</td>");
+                        row.push("<td>" + data[i].content + "</td>");
+                        row.push("<td>" + data[i].timeUp + "</td>");
+                        row.push("</tr>");
+                    }
+                    $("#table2").append(row.join(""));
+                }
+            })
+        })
     })
 </script>
 
