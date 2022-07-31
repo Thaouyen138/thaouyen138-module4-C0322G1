@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <h2>product_management</h2>
+    <div class="row">
+        <table id="tablePhone">
+            <tr>
+                <th>ID</th>
+                <th>Producer</th>
+                <th>Model</th>
+                <th>Price</th>
+            </tr>
+        </table>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $.ajax({
+            url: "http://localhost:8080/blog/api/v2",
+            type: "get",
+            dataType: "json",
+            success: function (data) {
+                let tr = [];
+                for (let i = 0; i < data.length; i++) {
+                    tr.push("<tr>");
+                    tr.push("<td>" + data[i].id + "</td>");
+                    tr.push("<td>" + data[i].producer + "</td>");
+                    tr.push("<td>" + data[i].model + "</td>");
+                    tr.push("<td>" + data[i].price + "</td>");
+                    tr.push("</tr>");
+                }
+                $("#table2").append(row.join(""));
+            }
+        })
+
+        $("#more").click(function () {
+            $("#table2").empty();
+
+            $.ajax({
+                url: "http://localhost:8080/blog/api/v2",
+                type: "get",
+                dataType: "json",
+                success: function (data) {
+                    let tr = [];
+                    for (let i = 0; i < data.length; i++) {
+                        tr.push("<tr>");
+                        tr.push("<td>" + data[i].id + "</td>");
+                        tr.push("<td>" + data[i].producer + "</td>");
+                        tr.push("<td>" + data[i].model + "</td>");
+                        tr.push("<td>" + data[i].price + "</td>");
+                        tr.push("</tr>");
+                    }
+                    $("#table2").append(tr.join(""));
+                }
+            })
+        })
+    })
+</script>
+<script src="jquery-3.5.1.min.js"></script>
+</body>
+</html>
