@@ -3,7 +3,6 @@ package vn.codegym.model;
 import javax.persistence.*;
 import java.util.Set;
 
-
 @Entity
 public class Role {
 
