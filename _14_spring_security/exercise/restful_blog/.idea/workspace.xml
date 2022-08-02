@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0cb8eed5-a965-48f1-bf56-92acead0ab41" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/codegym/restful_blog/RestfulBlogApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/codegym/restful_blog/config/WebSecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/codegym/restful_blog/controller/BlogController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/codegym/restful_blog/controller/CategoryController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/codegym/restful_blog/model/Blog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/codegym/restful_blog/model/Category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/codegym/restful_blog/model/MyUserDetail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/codegym/restful_blog/model/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/codegym/restful_blog/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/codegym/restful_blog/repository/IBlogRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/codegym/restful_blog/repository/ICategoryRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/codegym/restful_blog/repository/IUserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/codegym/restful_blog/service/BlogServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/codegym/restful_blog/service/CategoryServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/codegym/restful_blog/service/IBlogService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/codegym/restful_blog/service/ICategoryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/codegym/restful_blog/service/MyUserDetailServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/database/blog.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/database/category.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/database/user.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/vn/codegym/restful_blog/RestfulBlogApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2CYaYPumgZC90poDTk17CodB7yg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestfulBlogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="restful_blog.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="vn.codegym.restful_blog.RestfulBlogApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0cb8eed5-a965-48f1-bf56-92acead0ab41" name="Default Changelist" comment="" />
+      <created>1658982025720</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1658982025720</updated>
+      <workItem from="1658982028387" duration="7234000" />
+      <workItem from="1659007804060" duration="595000" />
+      <workItem from="1659026550040" duration="1196000" />
+      <workItem from="1659179909921" duration="114000" />
+      <workItem from="1659181470214" duration="596000" />
+      <workItem from="1659277512372" duration="4183000" />
+      <workItem from="1659326081349" duration="9099000" />
+    </task>
+    <task id="LOCAL-00001" summary="exercise11">
+      <created>1659001676434</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1659001676434</updated>
+    </task>
+    <task id="LOCAL-00002" summary="exercise11">
+      <created>1659001774317</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1659001774317</updated>
+    </task>
+    <task id="LOCAL-00003" summary="exer">
+      <created>1659279532982</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659279532983</updated>
+    </task>
+    <task id="LOCAL-00004" summary="exer">
+      <created>1659281556892</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1659281556892</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="exercise11" />
+    <MESSAGE value="exer" />
+    <option name="LAST_COMMIT_MESSAGE" value="exer" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="320" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1658997124402">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1658997124402" />
+    <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser" timestamp="1659338854085">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1659338854085" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1659410862067">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1659410862067" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.25.1440.875@0.25.1440.875" timestamp="1659001625922" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1659410862066">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1659410862066" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.25.1440.875@0.25.1440.875" timestamp="1659001625922" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1659410862063">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1659410862063" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.25.1440.875@0.25.1440.875" timestamp="1659001625922" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1659410862066">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1659410862066" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.25.1440.875@0.25.1440.875" timestamp="1659001625922" />
+    <state width="1398" height="245" key="GridCell.Tab.1.bottom" timestamp="1659410862068">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1659410862068" />
+    <state width="1398" height="245" key="GridCell.Tab.1.bottom/0.25.1440.875@0.25.1440.875" timestamp="1659001625923" />
+    <state width="1398" height="245" key="GridCell.Tab.1.center" timestamp="1659410862067">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1659410862067" />
+    <state width="1398" height="245" key="GridCell.Tab.1.center/0.25.1440.875@0.25.1440.875" timestamp="1659001625923" />
+    <state width="1398" height="245" key="GridCell.Tab.1.left" timestamp="1659410862067">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1659410862067" />
+    <state width="1398" height="245" key="GridCell.Tab.1.left/0.25.1440.875@0.25.1440.875" timestamp="1659001625922" />
+    <state width="1398" height="245" key="GridCell.Tab.1.right" timestamp="1659410862067">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1659410862067" />
+    <state width="1398" height="245" key="GridCell.Tab.1.right/0.25.1440.875@0.25.1440.875" timestamp="1659001625923" />
+    <state width="1398" height="304" key="GridCell.Tab.2.bottom" timestamp="1659003691343">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="304" key="GridCell.Tab.2.bottom/0.0.1440.900@0.0.1440.900" timestamp="1659003691343" />
+    <state width="1398" height="304" key="GridCell.Tab.2.bottom/0.25.1440.875@0.25.1440.875" timestamp="1659001550044" />
+    <state width="1398" height="304" key="GridCell.Tab.2.center" timestamp="1659003691343">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="304" key="GridCell.Tab.2.center/0.0.1440.900@0.0.1440.900" timestamp="1659003691343" />
+    <state width="1398" height="304" key="GridCell.Tab.2.center/0.25.1440.875@0.25.1440.875" timestamp="1659001550044" />
+    <state width="1398" height="304" key="GridCell.Tab.2.left" timestamp="1659003691343">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="304" key="GridCell.Tab.2.left/0.0.1440.900@0.0.1440.900" timestamp="1659003691343" />
+    <state width="1398" height="304" key="GridCell.Tab.2.left/0.25.1440.875@0.25.1440.875" timestamp="1659001550043" />
+    <state width="1398" height="304" key="GridCell.Tab.2.right" timestamp="1659003691343">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="304" key="GridCell.Tab.2.right/0.0.1440.900@0.0.1440.900" timestamp="1659003691343" />
+    <state width="1398" height="304" key="GridCell.Tab.2.right/0.25.1440.875@0.25.1440.875" timestamp="1659001550044" />
+    <state x="320" y="174" key="Vcs.Push.Dialog.v2" timestamp="1659281559711">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="174" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1659281559711" />
+  </component>
+</project>

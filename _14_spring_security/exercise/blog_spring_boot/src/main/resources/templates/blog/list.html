@@ -8,10 +8,22 @@
 </head>
 <body>
 <div class="row bg-primary" style="height: 70px;">
-    <div class="col-md-12 center-box ">
+    <div class="col-md-2 center-box text-white">
+        <a href="/" class="text-white font-weight-bold" style="font-size: 40px ;text-decoration: none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+            </svg>
+        </a>
+    </div>
+    <div class="col-md-8 center-box ">
         <a href="/" class="text-white font-weight-bold" style="font-size: 40px ;text-decoration: none">
             blog list
         </a>
+    </div>
+    <div class="col-md-2 center-box">
+        <form th:action="@{/logout}" method="post">
+            <input type="submit" value="logout" style="border-radius: 50px"/>
+        </form>
     </div>
 </div>
 <div>
@@ -33,24 +45,22 @@
             <td th:text="${blog.category.name}"></td>
             <td th:text="${blog.name}"></td>
             <td th:text="${blog.timeUp}"></td>
-            <td><a th:href="@{/edit/__${blog.id}__}">edit</a></td>
-            <td><a th:href="@{/delete/__${blog.id}__}">delete</a></td>
+            <td><a th:href="@{/blog/edit/__${blog.id}__}">edit</a></td>
+            <td><a th:href="@{/blog/delete/__${blog.id}__}">delete</a></td>
         </tr>
         </tbody>
     </table>
 </div>
 <div>
     <div class="center-box w-100">
-        <a href="/create" class="btn btn-primary font-weight-bold">
+        <a href="/blog/create" class="btn btn-primary font-weight-bold">
             𝔸𝕕𝕕 𝕟𝕖𝕨 &ensp;
             <i class="bi bi-calendar2-plus font-weight-bold" style="font-size: 30px"></i>
             <i class="ml-2 bi bi-plus-circle font-weight-bold"></i>
         </a>
     </div>
 </div>
-<form th:action="@{/logout}" method="post">
-    <input type="submit" value="logout"/>
-</form>
+
 </body>
 <script src="/resources/jquery/jquery-3.5.1.min.js"></script>
 <script src="/resources/datatables/js/jquery.dataTables.min.js"></script>
