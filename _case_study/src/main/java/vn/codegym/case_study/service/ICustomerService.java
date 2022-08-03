@@ -7,7 +7,7 @@ import vn.codegym.case_study.model.customer.Customer;
 
 public interface ICustomerService {
 
-    Page<Customer> findALl(Pageable pageable);
+    Page<Customer> findALl(String id, String customerType, Pageable pageable);
 
     void create(Customer customer);
 

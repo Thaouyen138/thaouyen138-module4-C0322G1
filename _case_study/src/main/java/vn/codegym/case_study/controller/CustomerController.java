@@ -28,9 +28,12 @@ public class CustomerController {
 
     @GetMapping("")
     public String showListCustomer(@RequestParam(name = "page", defaultValue = "0") int page,
-                                   Model model
-    ) {
-        model.addAttribute("customerList", iCustomerService.findALl(PageRequest.of(page, 5)));
+                                   @RequestParam(name = "id",defaultValue = "") String id,
+                                   @RequestParam(name = "customerId",defaultValue = "") String customerId,
+                                   Model model ){
+        model.addAttribute("customerList", iCustomerService.findALl(id,customerId,PageRequest.of(page, 5)));
+        model.addAttribute("id",id);
+        model.addAttribute("customerId",customerId);
         return  "customer/list";
     }
 

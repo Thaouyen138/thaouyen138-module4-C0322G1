@@ -13,8 +13,8 @@ public class CustomerService implements ICustomerService {
      @Autowired
      private ICustomerRepository customerRepository;
     @Override
-    public Page<Customer> findALl(Pageable pageable) {
-        return customerRepository.findAllCustomer(pageable);
+    public Page<Customer> findALl(String id, String customerType,Pageable pageable) {
+        return customerRepository.findByField("%"+id +"%","%" + customerType+ "%",pageable);
     }
 
      @Override
