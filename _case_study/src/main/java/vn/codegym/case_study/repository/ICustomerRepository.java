@@ -6,8 +6,10 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import vn.codegym.case_study.model.customer.Customer;
 
-public interface ICustomerRepository  extends JpaRepository<Customer,Integer> {
-    @Query(value = "SELECT  * FROM customer where  status_delete = 0" ,nativeQuery = true)
-    public Page<Customer> findAllCustomer (Pageable pageable);
+public interface ICustomerRepository extends JpaRepository<Customer, Integer> {
+    @Query(value = "SELECT  * FROM customer where  status_delete = 0", nativeQuery = true)
+    public Page<Customer> findAllCustomer(Pageable pageable);
 
+    @Query(value = "select  * from customer where id=:id and status_delete=0", nativeQuery = true)
+    Customer findById(String id);
 }

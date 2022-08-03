@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link th:href="@{/bootstrap/bootstrap413/css/bootstrap.min.css}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <style>
+        .center-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .space-around {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+<form action="/customer/edit/" method="post" th:object="${customer}">
+    <input th:field="*{id}" hidden class="form-control">
+    <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input th:field="*{name}" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Date of birth</label>
+        <input type="date" th:field="*{dateOfBirth}" class="form-control">
+    </div>
+        <div class="mb-3">
+            <label class="form-label">gender</label>
+            <select th:field="*{gender}" class="form-control">
+                <option th:value="null">choose</option>
+                <option th:value="1">Nữ</option>
+                <option th:value="2">Nam</option>
+            </select>
+        </div>
+<!--    <div class="mb-3">-->
+<!--        <label class="form-label">Gender </label>-->
+<!--        <input  th:field="*{gender}" class="form-control" >-->
+<!--    </div>-->
+    <div class="mb-3">
+        <label class="form-label">Indentity </label>
+        <input  th:field="*{idCard}" class="form-control" >
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Phone</label>
+        <input th:field="*{phoneNumber}" class="form-control" >
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input  th:field="*{email}" class="form-control" >
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Address</label>
+        <input  th:field="*{address}" class="form-control" >
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Customer type</label>
+        <select th:field="*{customerType}" class="form-control">
+            <option th:each="items : ${customerType}"  th:value="${items.id}"
+                    th:text="${items.name}">
+            </option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-warning">edit</button>
+</form>
+</body>
+<script th:src="@{/bootstrap/jquery/jquery-3.5.1.min.js}"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script th:src="@{/bootstrap/bootstrap413/js/bootstrap.bundle.min.js}"></script>
+</html>

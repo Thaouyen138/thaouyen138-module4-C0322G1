@@ -22,4 +22,22 @@ public class CustomerService implements ICustomerService {
         customer.setStatusDelete(0);
          customerRepository.save(customer);
      }
+
+     @Override
+     public void edit(Customer customer) {
+        customer.setStatusDelete(0);
+        customerRepository.save(customer);
+     }
+
+     @Override
+     public Customer findById(String id) {
+         return customerRepository.findById(id);
+     }
+
+     @Override
+     public void delete(String id) {
+        Customer customer = findById(id);
+        customer.setStatusDelete(1);
+        customerRepository.save(customer);
+     }
  }

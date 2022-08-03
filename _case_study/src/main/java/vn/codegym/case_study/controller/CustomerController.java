@@ -46,4 +46,22 @@ public class CustomerController {
         return "redirect:/customer";
     }
 
+    @GetMapping("/edit/{id}")
+    public String showEdit(@PathVariable("id") String id, Model model) {
+        Customer customer = iCustomerService.findById(id);
+        model.addAttribute("customer", customer);
+        return "customer/edit";
+    }
+
+    @PostMapping("/edit")
+    public String edit(@ModelAttribute("blog") Customer customer) {
+        iCustomerService.edit(customer);
+        return "redirect:/customer";
+    }
+    @GetMapping("/delete/{id}")
+    public String delete(@PathVariable("id") String id) {
+        iCustomerService.delete(id);
+        return "redirect:/customer";
+    }
+
 }

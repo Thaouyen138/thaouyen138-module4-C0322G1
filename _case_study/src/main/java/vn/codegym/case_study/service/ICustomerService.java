@@ -10,4 +10,10 @@ public interface ICustomerService {
     Page<Customer> findALl(Pageable pageable);
 
     void create(Customer customer);
+
+    void edit(Customer customer);
+
+    Customer findById(String id);
+
+    void delete(String id);
 }
