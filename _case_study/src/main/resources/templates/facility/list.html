@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link th:href="@{/bootstrap/bootstrap413/css/bootstrap.min.css}" rel="stylesheet" type="text/css">
+    <link rel="icon" href="/bootstrap/bootstrap413/uyendepgai.jpeg">
+    <style>
+        .center-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .space-around {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+
+<div class="row" style="height: 70px;margin: 0">
+    <div class="col-md-1 bg-warning center-box">
+        <a class="bi bi-house-heart  font-weight-bold " style=" color :white;border-radius:15px;font-size: 50px"
+           href="/">
+        </a>
+    </div>
+    <div class="col-md-10 bg-warning center-box ">
+        <a href="/facility/" class="text-white font-weight-bold" style="font-size: 40px ;text-decoration: none">
+            <p style="color:white; margin: 0; padding: 0">facility ⓁⒾⓈⓉ </p>
+        </a>
+    </div>
+    <div class="col-md-1 bg-warning center-box">
+
+        <span class="bi bi-search  btn bg-white font-weight-bold"
+              data-toggle="modal" data-target="#search" style="width:300px;float: right ;border-radius: 20px">
+        </span>
+    </div>
+</div>
+<table class="table table-hover table-striped table-center container-fluid" style="margin-top: 0px" id="table">
+    <thead>
+    <tr style="height: 70px">
+        <th style="height: 70px" class="border-0 text-white bg-dark">Id facility</th>
+        <th style="height: 70px" class="border-0  text-white bg-dark"> Area</th>
+        <th style="height: 70px" class="border-0 text-white  bg-dark">Cost</th>
+        <th style="height: 70px" class="border-0 text-white  bg-dark">Description orther</th>
+        <th style="height: 70px" class="border-0 text-white  bg-dark">Facility free</th>
+        <th style="height: 70px" class="border-0 text-white  bg-dark">Max people</th>
+        <th style="height: 70px" class="border-0 text-white  bg-dark">Name</th>
+        <th style="height: 70px" class="border-0 text-white  bg-dark">Number floor</th>
+        <th style="height: 70px" class="border-0 text-white  bg-dark">Pool area</th>
+        <th style="height: 70px" class="border-0 text-white  bg-dark">Standard</th>
+        <th style="height: 70px" class="border-0 text-white  bg-dark">Facility Type</th>
+        <th style="height: 70px" class="border-0 text-white  bg-dark">Rent Type</th>
+        <th style="height: 70px" class="border-0 bg-dark  text-warning">𝔼𝔻𝕀𝕋</th>
+        <th style="height: 70px" class="border-0 bg-dark ">
+            <span style="color: red">𝔻</span>
+            <span style="color: white">𝔼</span>
+            <span style="color: gold">𝕃</span>
+            <span style="color: white">𝔼</span>
+            <span style="color: gold">T</span>
+            <span style="color: red">𝔼</span>
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="faci : ${facilityList}">
+        <td th:text="${faci.id}"></td>
+        <td th:text="${faci.area}"></td>
+        <td th:text="${faci.cost}"></td>
+        <td th:text="${faci.descriptionOther}"></td>
+        <td th:text="${faci.facilityFree}"></td>
+        <td th:text="${faci.maxPeople}"></td>
+        <td th:text="${faci.name}"></td>
+        <td th:text="${faci.numberOfFloors}"></td>
+        <td th:text="${faci.poolArea}"></td>
+        <td th:text="${faci.standardRoom}"></td>
+        <td th:text="${faci.facilityTypeId.name}"></td>
+        <td th:text="${faci.rentTypeId.name}"></td>
+        <td>
+<!--            <a style="border-radius: 30px" th:href="@{/facility/edit/__${faci.id}__}" class="btn btn-warning"><i-->
+<!--                    class="bi bi-pencil-square"></i></a>-->
+        </td>
+
+        <!--            <btn class="btn btn-primary" data-toggle="modal" data-target="#delete" onclick="getId(`${faci.id}`)">-->
+        <!--                <i class="bi bi-trash"></i>-->
+        <!--            </btn>-->
+        <!--            </td>-->
+        <!--            <td>-->
+        <!--                <a style="border-radius: 30px" th:href="@{/customer/delete/__${faci.id}__}" class="btn btn-warning" name="delete" >-->
+        <!--                    <i class="bi bi-trash"></i>-->
+        <!--                </a>-->
+        <!--            </td>-->
+        <td>
+            <a style="border-radius: 30px" class="btn btn-danger">
+<!--               data-toggle="modal" data-target="#delete" th:attr="onclick=|getId(`${c.id}`)|">-->
+<!--                <i class="bi bi-trash"></i>-->
+            </a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

@@ -7,8 +7,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import vn.codegym.case_study.model.customer.Customer;
 import vn.codegym.case_study.model.customer.CustomerType;
-import vn.codegym.case_study.service.ICustomerService;
-import vn.codegym.case_study.service.ICustomerTypeService;
+import vn.codegym.case_study.service.itf.customer.ICustomerService;
+import vn.codegym.case_study.service.itf.customer.ICustomerTypeService;
 
 import java.util.List;
 
@@ -30,10 +30,12 @@ public class CustomerController {
     public String showListCustomer(@RequestParam(name = "page", defaultValue = "0") int page,
                                    @RequestParam(name = "id",defaultValue = "") String id,
                                    @RequestParam(name = "customerId",defaultValue = "") String customerId,
+                                   @RequestParam(name = "name",defaultValue = "") String name,
                                    Model model ){
-        model.addAttribute("customerList", iCustomerService.findALl(id,customerId,PageRequest.of(page, 5)));
+        model.addAttribute("customerList", iCustomerService.findALl(id,customerId,name,PageRequest.of(page, 8)));
         model.addAttribute("id",id);
         model.addAttribute("customerId",customerId);
+        model.addAttribute("name",name);
         return  "customer/list";
     }
 
@@ -66,5 +68,4 @@ public class CustomerController {
         iCustomerService.delete(id);
         return "redirect:/customer";
     }
-
 }

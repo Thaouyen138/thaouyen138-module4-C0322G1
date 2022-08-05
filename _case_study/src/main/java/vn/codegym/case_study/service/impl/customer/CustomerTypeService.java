@@ -1,10 +1,10 @@
-package vn.codegym.case_study.service.impl;
+package vn.codegym.case_study.service.impl.customer;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import vn.codegym.case_study.model.customer.CustomerType;
-import vn.codegym.case_study.repository.ICustomerTypeRepository;
-import vn.codegym.case_study.service.ICustomerTypeService;
+import vn.codegym.case_study.repository.customer.ICustomerTypeRepository;
+import vn.codegym.case_study.service.itf.customer.ICustomerTypeService;
 import java.util.List;
 
 @Service

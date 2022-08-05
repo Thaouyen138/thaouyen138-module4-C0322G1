@@ -38,7 +38,7 @@
               data-toggle="modal" data-target="#search" style="width:300px;float: right ;border-radius: 20px">
         </span>
     </div>
-    <table class="table table-hover table-center container-fluid" style="margin-top: 0px" id="table">
+    <table class="table table-hover table-striped table-center container-fluid" style="margin-top: 0px" id="table">
         <thead>
         <tr style="height: 70px">
             <th style="height: 70px" class="border-0 text-white bg-dark">Id Customer</th>
@@ -51,6 +51,7 @@
             <th style="height: 70px" class="border-0 text-white  bg-dark">Email</th>
             <th style="height: 70px" class="border-0 text-white  bg-dark">Address</th>
             <th style="height: 70px" class="border-0 bg-dark  text-warning">𝔼𝔻𝕀𝕋</th>
+            <th style="height: 70px" class="border-0 bg-dark  text-warning">Details</th>
             <th style="height: 70px" class="border-0 bg-dark ">
                 <span style="color: red">𝔻</span>
                 <span style="color: white">𝔼</span>
@@ -81,16 +82,16 @@
                 <a style="border-radius: 30px" th:href="@{/customer/edit/__${c.id}__}" class="btn btn-warning"><i
                         class="bi bi-pencil-square"></i></a>
             </td>
-
-            <!--            <btn class="btn btn-primary" data-toggle="modal" data-target="#delete" onclick="getId(`${c.id}`)">-->
-            <!--                <i class="bi bi-trash"></i>-->
-            <!--            </btn>-->
-            <!--            </td>-->
-            <!--            <td>-->
-            <!--                <a style="border-radius: 30px" th:href="@{/customer/delete/__${c.id}__}" class="btn btn-warning" name="delete" >-->
-            <!--                    <i class="bi bi-trash"></i>-->
-            <!--                </a>-->
-            <!--            </td>-->
+            <td>
+                <a style="border-radius: 30px" class="btn btn-warning"
+                   data-toggle="modal" data-target="#view"
+                   th:attr="onclick=|detail(`${c.id}`,`${c.customerType.name}`,
+                                            `${c.name}`,`${c.dateOfBirth}`,
+                                            `${c.gender}`,`${c.idCard}`,
+                                            `${c.phoneNumber}`,`${c.email}`,`${c.address}`)|">
+                    <i class="bi bi-eye"></i>
+                </a>
+            </td>
             <td>
                 <a style="border-radius: 30px" class="btn btn-danger"
                    data-toggle="modal" data-target="#delete" th:attr="onclick=|getId(`${c.id}`)|">
@@ -143,8 +144,11 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title w-100 text-center" id="confirm"> Confirm</h4>
+                <h4 class="modal-title w-100 text-center text-danger"> ᴀᴛᴛᴇɴᴛɪᴏɴ</h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h4 class="modal-title w-100 text-center" id="confirm"></h4>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger" onclick="deleteById()">
@@ -155,9 +159,23 @@
         </div>
     </div>
 </div>
+<div class="modal" id="view">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <h4 class="modal-title w-100 text-center">ɪɴғᴏʀᴍᴀᴛɪᴏɴ</h4>
+            <div class="modal-header" id="views">
+
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-warning " data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 <div class="modal" id="search">
-    <div class="modal-dialog">
+    <div style="width: 1000px" class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header w-100">
                 <div class="w-100 center-box">
@@ -165,25 +183,31 @@
                           class="form-inline my-2 my-lg-0 w-100 center-box">
                         <div class="p-1 bg-light rounded rounded-pill w-100 shadow-sm center-box">
                             <div class="input-group center-box w-100 space-around">
-                                <select name="customerId" class="form-control border-0 bg-light w-25 p-0">
+                                <input style="width: 20% " type="search" placeholder="Input id"
+                                       aria-describedby="button-addon1"
+                                       class="form-control border-0 bg-light p-0"
+                                       name="id">
+                                <select style="width: 40% " name="customerId"
+                                        class="form-control border-0 bg-light  p-0">
                                     <option value="">--customertype--</option>
                                     <option th:each="item : ${customerType}" th:value="${item.id}"
                                             th:text="${item.name}"></option>
                                 </select>
-                                <input type="search" placeholder="Input id" aria-describedby="button-addon1"
-                                       class="form-control border-0 bg-light w-25 p-0"
-                                       name="id">
-                                <div class="input-group-append w-25">
+                                <input style="width: 20% " type="search" placeholder="Input name"
+                                       aria-describedby="button-addon1"
+                                       class="form-control border-0 bg-light  p-0"
+                                       name="name">
+                                <div style="width: 20% " class="input-group-append ">
                                     <button id="button-addon1" type="submit"
-                                            class="btn btn-link text-primary h-100 w-100 p-0">
-                                        <i class="bi bi-search"></i>
+                                            class="btn btn-link text-primary h-100 center-box p-0">
+                                        <i style="margin-left: 30px" class="bi bi-search text-dark center-box"></i>
                                     </button>
                                 </div>
                             </div>
                         </div>
                     </form>
                 </div>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <button type="button" class="close" data-dismiss="modal ">&times;</button>
             </div>
         </div>
     </div>
@@ -212,5 +236,19 @@
     function deleteById() {
         window.location.href = "/customer/delete/" + idToDelete;
     }
+
+    function detail(id, customerType, name, dateOfBirth, gender, idCard, phoneNumber, email, address) {
+        document.getElementById("views").innerHTML = "" +
+            "Khách hàng id : " + id + "<br>" +
+            "Customer type : " + customerType + " <br>" +
+            "Name : " + name + " <br>" +
+            "Date of birth : " + dateOfBirth + " <br>" +
+            "Gender : " + (gender == 2 ? 'Nam' : 'Nu') + " <br>" +
+            "Indentity : " + idCard + " <br>" +
+            "Phone number : " + phoneNumber + " <br>" +
+            "Email : " + email + " <br>" +
+            "Address : " + address;
+    }
 </script>
+
 </html>

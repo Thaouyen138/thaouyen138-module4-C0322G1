@@ -1,4 +1,4 @@
-package vn.codegym.case_study.service;
+package vn.codegym.case_study.service.itf.customer;
 
 import vn.codegym.case_study.model.customer.Customer;
 import vn.codegym.case_study.model.customer.CustomerType;

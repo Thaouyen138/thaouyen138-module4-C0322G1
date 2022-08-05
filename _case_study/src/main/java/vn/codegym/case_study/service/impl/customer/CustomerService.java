@@ -1,20 +1,20 @@
-package vn.codegym.case_study.service.impl;
+package vn.codegym.case_study.service.impl.customer;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import vn.codegym.case_study.model.customer.Customer;
-import vn.codegym.case_study.repository.ICustomerRepository;
-import vn.codegym.case_study.service.ICustomerService;
+import vn.codegym.case_study.repository.customer.ICustomerRepository;
+import vn.codegym.case_study.service.itf.customer.ICustomerService;
  @Service
 public class CustomerService implements ICustomerService {
 
      @Autowired
      private ICustomerRepository customerRepository;
     @Override
-    public Page<Customer> findALl(String id, String customerType,Pageable pageable) {
-        return customerRepository.findByField("%"+id +"%","%" + customerType+ "%",pageable);
+    public Page<Customer> findALl(String id, String customerType,String name,Pageable pageable) {
+        return customerRepository.findByField("%"+id +"%","%" + customerType+ "%","%"+name +"%",pageable);
     }
 
      @Override
