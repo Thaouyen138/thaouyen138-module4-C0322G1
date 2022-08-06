@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link th:href="@{/bootstrap/bootstrap413/css/bootstrap.min.css}" rel="stylesheet" type="text/css">
+    <link rel="icon" href="/bootstrap/bootstrap413/uyendepgai.jpeg">
+    <style>
+        .center-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .space-around {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+
+<div class="row">
+    <div class="col-md-1">
+        <a href="/customer/" style="text-decoration: none">
+            <p style="margin-right: 20px" class="text-warning">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                     class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                          d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                </svg>
+            </p>
+        </a>
+    </div>
+    <div class="col-md-10"><center><h1 class="text-warning" style="font-size: 50px"> 🅴🅳🅸🆃 ​ 🅲🆄🆂🆃🅾🅼🅴🆁 </h1></center></div>
+    <div class="col-md-1"></div>
+</div>
+<form action="/customer/edit/" method="post" th:object="${facility}">
+<div class="mb-3">
+    <input type="text" th:field="*{id}" class="form-control">
+</div>
+<div class="mb-3">
+    <label class="form-label">Area </label>
+    <input type="text" th:field="*{area}" hidden class="form-control">
+</div>
+<div class="mb-3">
+    <label class="form-label">Cost </label>
+    <input type="text" th:field="*{cost}" class="form-control">
+</div>
+<div class="mb-3">
+    <label class="form-label">Description orther </label>
+    <input type="text" th:field="*{descriptionOther}" class="form-control">
+</div>
+<div class="mb-3">
+    <label class="form-label">Facility free </label>
+    <input type="text" th:field="*{facilityFree}" class="form-control">
+</div>
+<div class="mb-3">
+    <label class="form-label">Max people </label>
+    <input type="text" th:field="*{maxPeople}" class="form-control">
+</div>
+<div class="mb-3">
+    <label class="form-label">Name </label>
+    <input type="text" th:field="*{name}" class="form-control">
+</div>
+<div class="mb-3">
+    <label class="form-label">Number of floors </label>
+    <input type="text" th:field="*{numberOfFloors}" class="form-control">
+</div>
+<div class="mb-3">
+    <label class="form-label">Pool area </label>
+    <input type="text" th:field="*{poolArea}" class="form-control">
+</div>
+<div class="mb-3">
+    <label class="form-label">Standard room </label>
+    <input type="text" th:field="*{standardRoom}" class="form-control">
+</div>
+<div class="mb-3">
+    <label class="form-label">Facility type </label>
+    <select th:field="*{facilityTypeId}" class="form-control">
+        <option th:each="items : ${facilityType}" th:value="${items.id}"
+                th:text="${items.name}">
+        </option>
+    </select>
+</div>
+<div class="mb-3">
+    <label class="form-label">Rent type </label>
+    <input type="text" th:field="*{rentTypeId}" class="form-control">
+    <select th:field="*{rentTypeId}" class="form-control">
+        <option th:each="items : ${rentType}" th:value="${items.id}"
+                th:text="${items.name}">
+        </option>
+    </select>
+</div>
+<button type="submit" class="btn btn-dark float-right" style="color:goldenrod;border-radius: 30px;font-size: 30px; margin-top: 30px">Submit</button>
+<a href="/" class="btn btn-dark float-left" style="color:goldenrod;border-radius: 30px;font-size: 30px;margin-top: 30px"> Back Home</a>
+
+</body>
+</html>

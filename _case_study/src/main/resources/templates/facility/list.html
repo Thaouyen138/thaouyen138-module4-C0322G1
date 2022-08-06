@@ -81,8 +81,8 @@
         <td th:text="${faci.facilityTypeId.name}"></td>
         <td th:text="${faci.rentTypeId.name}"></td>
         <td>
-<!--            <a style="border-radius: 30px" th:href="@{/facility/edit/__${faci.id}__}" class="btn btn-warning"><i-->
-<!--                    class="bi bi-pencil-square"></i></a>-->
+            <a style="border-radius: 30px" th:href="@{/facility/edit/__${faci.id}__}" class="btn btn-warning"><i
+                    class="bi bi-pencil-square"></i></a>
         </td>
 
         <!--            <btn class="btn btn-primary" data-toggle="modal" data-target="#delete" onclick="getId(`${faci.id}`)">-->
@@ -95,13 +95,55 @@
         <!--                </a>-->
         <!--            </td>-->
         <td>
-            <a style="border-radius: 30px" class="btn btn-danger">
-<!--               data-toggle="modal" data-target="#delete" th:attr="onclick=|getId(`${c.id}`)|">-->
-<!--                <i class="bi bi-trash"></i>-->
-            </a>
+            <a style="border-radius: 30px" th:href="@{/customer/delete/__${faci.id}__}" class="btn btn-warning" name="delete" >-->
+                                    <i class="bi bi-trash"></i>
+                                </a>
         </td>
     </tr>
     </tbody>
+    <tr>
+        <td colspan="11">
+            <div class="center-box w-100">
+                <a style="border-radius: 30px;border:solid ;border: goldenrod  ;color: goldenrod"
+                   href="/facility/create" class="btn btn-outline-dark font-weight-bold">
+                    <p style="color: goldenrod"> 𝔸𝕕𝕕 𝕟𝕖𝕨 𝕔𝕦𝕤𝕥𝕠𝕞𝕖𝕣 &ensp;
+                        <i class="bi bi-calendar2-plus font-weight-bold" style="font-size: 30px"></i></p>
+                </a>
+            </div>
+        </td>
+    </tr>
 </table>
+<div class="modal" id="search">
+    <div style="width: 1000px" class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header w-100">
+                <div class="w-100 center-box">
+                    <form method="get" action="/facility/"
+                          class="form-inline my-2 my-lg-0 w-100 center-box">
+                        <div class="p-1 bg-light rounded rounded-pill w-100 shadow-sm center-box">
+                            <div class="input-group center-box w-100 space-around">
+                                <input style="width: 20% " type="search" placeholder="Input id"
+                                       aria-describedby="button-addon1"
+                                       class="form-control border-0 bg-light p-0"
+                                       name="id">
+                                <input style="width: 20% " type="search" placeholder="Input name"
+                                       aria-describedby="button-addon1"
+                                       class="form-control border-0 bg-light  p-0"
+                                       name="name">
+                                <div style="width: 20% " class="input-group-append ">
+                                    <button id="button-addon1" type="submit"
+                                            class="btn btn-link text-primary h-100 center-box p-0">
+                                        <i style="margin-left: 30px" class="bi bi-search text-dark center-box"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <button type="button" class="close" data-dismiss="modal ">&times;</button>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

@@ -4,11 +4,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
+import vn.codegym.case_study.model.customer.Customer;
 import vn.codegym.case_study.model.customer.CustomerType;
+import vn.codegym.case_study.model.facility.Facility;
 import vn.codegym.case_study.model.facility.FacilityType;
 import vn.codegym.case_study.model.facility.RentType;
 import vn.codegym.case_study.service.itf.facility.IFacilityService;
@@ -49,5 +48,35 @@ public class FacilityController {
         model.addAttribute("id",id);
         model.addAttribute("name",name);
         return  "facility/list";
+    }
+
+    @GetMapping("/create")
+    public String showCreateForm(Model model) {
+        model.addAttribute("facility", new Facility());
+        return "facility/create";
+    }
+
+    @PostMapping("/create")
+    public String create(@ModelAttribute("facility") Facility facility) {
+        iFacilityService.create(facility);
+        return "redirect:/facility";
+    }
+
+    @GetMapping("/edit/{id}")
+    public String showEdit(@PathVariable("id") String id, Model model) {
+        Facility facility = iFacilityService.findById(id);
+        model.addAttribute("facility", facility);
+        return "facility/edit";
+    }
+
+    @PostMapping("/edit")
+    public String edit(@ModelAttribute("facility") Facility facility) {
+        iFacilityService.edit(facility);
+        return "redirect:/facility";
+    }
+    @GetMapping("/delete/{id}")
+    public String delete(@PathVariable("id") String id) {
+        iFacilityService.delete(id);
+        return "redirect:/facility";
     }
 }
